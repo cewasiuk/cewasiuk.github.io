@@ -10,30 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
     <!-- SEO -->
-    <meta name="description" content="Christopher Ewasiuk — PhD researcher in gravitational-wave and black-hole physics. Signal processing, matched filtering, PSD estimation, and resonant microwave cavity analysis. Publications in JHEP and Physical Review D." />
+    <meta name="description" content="Christopher Ewasiuk — PhD computational physicist specializing in black hole dynamics, gravitational waves, evaluation pipelines, and ML systems. 5 peer-reviewed publications. Open to research scientist and research engineer roles in the SF Bay Area." />
     <meta name="author" content="Christopher Ewasiuk" />
 
-    <!-- OpenGraph (nice previews on LinkedIn, Slack, etc.) -->
+    <!-- OpenGraph -->
     <meta property="og:title" content="Christopher Ewasiuk" />
-    <meta property="og:description" content="PhD researcher in gravitational-wave and black-hole physics. Signal processing, matched filtering, PSD estimation. Publications in JHEP and Physical Review D." />
+    <meta property="og:description" content="PhD computational physicist building evaluation frameworks, signal detection pipelines, and ML systems at the intersection of gravitational wave physics and AI-accelerated scientific discovery." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://chrisewasiuk.com/" />
-    <!-- Put a real image here (e.g. /images/og.png). If you don't have one yet, remove this line. -->
     <meta property="og:image" content="https://chrisewasiuk.com/images/og.png" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Christopher Ewasiuk" />
-    <meta name="twitter:description" content="PhD researcher in gravitational-wave and black-hole physics. Signal processing, matched filtering, PSD estimation." />
+    <meta name="twitter:description" content="PhD computational physicist building evaluation frameworks, signal detection pipelines, and ML systems." />
     <meta name="twitter:image" content="https://chrisewasiuk.com/images/og.png" />
 
-    <!-- Favicon (add these files to your repo when you can) -->
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
     <link rel="stylesheet" href="assets/css/main.css" />
 
-    <!-- Small add-on styles to support buttons + highlight chips without changing template files -->
     <style>
       .quicklinks { margin-top: 1.25em; display: flex; flex-wrap: wrap; gap: 0.75em; }
       .quicklinks form { margin: 0; }
@@ -53,9 +49,20 @@
         line-height: 1.2;
         background: rgba(255,255,255,0.06);
       }
+      .chip-open {
+        border: 1px solid rgba(100,220,150,0.5);
+        border-radius: 999px;
+        padding: 0.35em 0.85em;
+        font-size: 0.9em;
+        line-height: 1.2;
+        background: rgba(100,220,150,0.10);
+        color: rgba(140,255,180,0.95);
+        font-weight: 600;
+      }
 
       .pub-list { margin: 0; padding: 0; list-style: none; }
       .pub-item { padding: 1.0em 0; border-bottom: 1px solid rgba(255,255,255,0.12); }
+      .pub-item:last-child { border-bottom: none; }
       .pub-title { margin: 0 0 0.35em 0; font-size: 1.05em; }
       .pub-meta { margin: 0 0 0.75em 0; opacity: 0.9; }
       .pub-actions { display: flex; flex-wrap: wrap; gap: 0.6em; }
@@ -76,6 +83,17 @@
 
       .muted { opacity: 0.85; }
       .smallnote { font-size: 0.95em; opacity: 0.85; }
+
+      .open-banner {
+        margin-top: 1.25em;
+        padding: 0.6em 1em;
+        border-radius: 0.5em;
+        border: 1px solid rgba(100,220,150,0.35);
+        background: rgba(100,220,150,0.07);
+        font-size: 0.92em;
+        color: rgba(160,255,190,0.9);
+        line-height: 1.5;
+      }
     </style>
   </head>
 
@@ -87,38 +105,35 @@
 
       <h1>
         <span style="font-size: 1.15em;">Christopher Ewasiuk</span><br />
-        Computational physicist working at the intersection of gravitational physics, machine learning, and large-scale data analysis.
-
+        PhD computational physicist building evaluation frameworks, signal detection pipelines, and ML systems at the intersection of gravitational wave physics and AI-accelerated scientific discovery.
       </h1>
 
       <div class="highlights">
-        <span class="chip">ADMX Gravitational Wave Pipeline </span>
-        <span class="chip">Python, Pytorch, TensorFlow, PyCBC, HDF5, FFTW</span>
+        <span class="chip">ADMX Gravitational Wave Pipeline</span>
+        <span class="chip">Python · PyTorch · PyCBC · HDF5 · C++</span>
+        <span class="chip-open">&#x25CF; Open to roles — SF Bay Area</span>
+      </div>
+
+      <div class="open-banner">
+        Finishing my PhD at UC Santa Cruz (expected 2026) and actively exploring <strong>Research Scientist</strong> and <strong>Research Engineer</strong> roles in the SF Bay Area — particularly in AI for science, evaluation infrastructure, and ML systems. Feel free to reach out.
       </div>
 
       <div class="quicklinks">
         <form action="https://www.linkedin.com/in/christopher-ewasiuk-82a64120b" target="_blank">
           <input type="submit" value="LinkedIn" />
         </form>
-
         <form action="https://github.com/cewasiuk" target="_blank">
           <input type="submit" value="GitHub" />
         </form>
-
-
         <form action="/resume.pdf" target="_blank">
           <input type="submit" value="Resume" />
         </form>
         <form action="https://inspirehep.net/authors/2829289" target="_blank">
-          <input type="submit" value="INSPIRE HEP">
-          </form>
-
-		    <form action="https://www.erdosinstitute.org/certificates/fall-2025/data-science-boot-camp/christopher-ewasiuk/48380db7-91e0-4271-801d-e0c0b94fa313" target="_blank">
-			    <input type="submit" value="MRI NN Project">
-		      </form>
-
-
-
+          <input type="submit" value="INSPIRE HEP" />
+        </form>
+        <form action="https://www.erdosinstitute.org/certificates/fall-2025/data-science-boot-camp/christopher-ewasiuk/48380db7-91e0-4271-801d-e0c0b94fa313" target="_blank">
+          <input type="submit" value="MRI NN Project" />
+        </form>
       </div>
     </header>
 
@@ -130,44 +145,102 @@
         <header class="major">
           <h2>About</h2>
         </header>
-
         <p>
-          I work on large-scale signal detection problems involving extremely low-signal-to-noise experimental datasets, developing methods to identify rare high-frequency candidate events. My research combines theoretical modeling with production-style data-analysis pipelines, including matched filtering, phase-coherent signal processing, machine-learning-assisted detection methods, and robust spectral estimation techniques. I specialize in building scalable Python-based workflows for extracting weak signals from noisy data in complex sensor systems.
-
+          I am a computational physicist finishing my PhD at UC Santa Cruz, where my research focuses on black hole dynamics and gravitational waves. My work sits at the boundary between theory and implementation: 5 peer reviewed publications (4 first author), cross institutional collaborations at ADMX and Fermilab, and end to end pipelines spanning simulation, signal processing, and ML systems.
+My technical work centers on building frameworks that expose where models and predictions break down. That includes matched filtering systems for weak signal detection, evaluation pipelines that characterize failure modes across thousands of noise realizations, and simulation tools that extend existing codebases into new physical regimes. Outside of physics, I won top project at the Erdős Institute among roughly 200 PhD candidates, building a 3D deep learning pipeline for MRI brain tumor segmentation from scratch — Dice = 0.83, 86% precision on held-out data.
         </p>
-
+        I am actively looking for research scientist and research engineer roles in the SF Bay Area.
+        <p>
+         
+        </p>
       </section>
+<section id="research-software">
+  <header class="major">
+    <h2>Research Software and Analysis Pipelines</h2>
+  </header>
 
+
+  <div class="grid2">
+    <div>
+      <h3>ADMX Gravitational Wave Detection Pipeline</h3>
+      <p class="muted">
+        End to end signal analysis system built in collaboration with ADMX and Fermilab
+        to search for gravitational waves using resonant microwave cavity detectors.
+      </p>
+      <ul>
+        <li>Matched filtering pipelines across multi-terabyte experimental datasets, turning a manual analysis workflow into a reproducible, automated one</li>
+        <li>Frequency domain signal processing including FFT binning, PSD estimation via Welch and robust stacking, and receiver response calibration</li>
+        <li>Synthetic signal injection pipelines that stress tested detection models across thousands of noise realizations, surfacing failure modes and producing concrete evaluation criteria</li>
+        <li><a href="https://github.com/cewasiuk?tab=repositories&type=source" target="_blank" rel="noopener">Open source code on GitHub</a></li>
+      </ul>
+    </div>
+
+    <div>
+  <h3>Black Hole Simulation Framework</h3>
+  <p class="muted">
+    Extension of a widely used open source black hole simulation codebase
+    to a physical regime it was never designed to handle.
+  </p>
+  <ul>
+    <li>Identified the mathematical assumptions bounding the original codebase and overhauled its core dynamics to model charged charge depletion, producing the first computational framework of its kind for this class of problem</li>
+    <li>Covers both spin evolution and an approximate method for the time evolution of charged black holes, extending the original code which only handled spinning or static configurations</li>
+    <li>Numerical evolution pipelines covering ODE solvers, parameter sweeps, and interpolation across physically motivated initial conditions</li>
+    <li>Results published as a first author paper in Physical Review D</li>
+    <li><a href="https://github.com/cewasiuk/Spin-and-Charge-BH-Evolution" target="_blank" rel="noopener">Open source code on GitHub</a></li>
+  </ul>
+</div>
+
+    <div>
+      <h3>3D Brain Tumor Segmentation</h3>
+      <p class="muted">
+        End to end deep learning pipeline for volumetric MRI segmentation,
+        awarded top project among roughly 200 PhD candidates at the Erdős Institute.
+      </p>
+      <ul>
+        <li>Achieved Dice = 0.83 and 86% precision on held out test data across 500 patients and 4 MRI modalities</li>
+        <li>Designed a composite loss function combining BCE and Dice to address severe class imbalance between tumor and non-tumor regions</li>
+        <li>Built the full pipeline from data ingestion through training, threshold optimization, and inference evaluation using GPU accelerated PyTorch U-Net architectures</li>
+        <li><a href="https://github.com/cewasiuk/Brain_Tumor_CNN" target="_blank" rel="noopener">Open source code on GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
       <!-- Publications -->
       <section id="publications">
         <header class="major">
-          <h2>Selected publications</h2>
+          <h2>Recent publications</h2>
         </header>
 
         <ul class="pub-list">
 
+          <li class="pub-item">
+            <p class="pub-title">Quantum Tunneling of Primordial Black Holes to White Holes: Rates, Constraints, and Implications for Fast Radio Bursts</p>
+            <p class="pub-meta">Christopher Ewasiuk, Stefano Profumo. arXiv:2603.22516 [gr-qc] (2026).</p>
+            <div class="pub-actions">
+              <a class="btn" href="https://arxiv.org/abs/2603.22516" target="_blank" rel="noopener">arXiv</a>
+              <a class="btn" href="https://arxiv.org/pdf/2603.22516" target="_blank" rel="noopener">PDF</a>
+            </div>
+          </li>
 
+          <li class="pub-item">
+            <p class="pub-title">Dark-sector modifications to Kerr and Reissner–Nordström black hole evaporation</p>
+            <p class="pub-meta">Christopher Ewasiuk, Stefano Profumo. Physical Review D 111 (2025) 015008. arXiv:2505.04812 [gr-qc].</p>
+            <div class="pub-actions">
+              <a class="btn" href="https://arxiv.org/abs/2505.04812" target="_blank" rel="noopener">arXiv</a>
+              <a class="btn" href="https://arxiv.org/pdf/2505.04812" target="_blank" rel="noopener">PDF</a>
+              <a class="btn" href="https://journals.aps.org/prd/abstract/10.1103/bc7b-645v" target="_blank" rel="noopener">Journal</a>
+            </div>
+          </li>
 
-      
-        <li class="pub-item">
-          <p class="pub-title">Dark-sector modifications to Kerr and Reissner–Nordström black hole evaporation</p>
-          <p class="pub-meta">Christopher Ewasiuk, Stefano Profumo. Physical Review D 111 (2025) 015008. arXiv:2505.04812 [gr-qc].</p>
-          <div class="pub-actions">
-            <a class="btn" href="https://arxiv.org/abs/2505.04812" target="_blank" rel="noopener">arXiv</a>
-            <a class="btn" href="https://arxiv.org/pdf/2505.04812" target="_blank" rel="noopener">PDF</a>
-            <a class="btn" href="https://journals.aps.org/prd/abstract/10.1103/bc7b-645v" target="_blank" rel="noopener">Journal</a>
-          </div>
-        </li>
-	
-			  <li class="pub-item" style="border-bottom: none;">
-				<p class="pub-title">Constraints on the maximal number of dark degrees of freedom from black hole evaporation, cosmic rays, colliders, and supernovae</p>
-				<p class="pub-meta">Christopher Ewasiuk, Stefano Profumo. Physical Review D 111 (2025) 015008. arXiv:2409.11359 [hep-ph].</p>
-				<div class="pub-actions">
-				  <a class="btn" href="https://arxiv.org/abs/2409.11359" target="_blank" rel="noopener">arXiv</a>
-				  <a class="btn" href="https://arxiv.org/pdf/2409.11359" target="_blank" rel="noopener">PDF</a>
-				  <a class="btn" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.015008" target="_blank" rel="noopener">Journal</a>
-				</div>
-			  </li>
+          <li class="pub-item">
+            <p class="pub-title">Constraints on the maximal number of dark degrees of freedom from black hole evaporation, cosmic rays, colliders, and supernovae</p>
+            <p class="pub-meta">Christopher Ewasiuk, Stefano Profumo. Physical Review D 111 (2025) 015008. arXiv:2409.11359 [hep-ph].</p>
+            <div class="pub-actions">
+              <a class="btn" href="https://arxiv.org/abs/2409.11359" target="_blank" rel="noopener">arXiv</a>
+              <a class="btn" href="https://arxiv.org/pdf/2409.11359" target="_blank" rel="noopener">PDF</a>
+              <a class="btn" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.015008" target="_blank" rel="noopener">Journal</a>
+            </div>
+          </li>
 
           <li class="pub-item">
             <p class="pub-title">Precision gravity constraints on large dark sectors</p>
@@ -176,11 +249,9 @@
               <a class="btn" href="https://arxiv.org/abs/2509.02801" target="_blank" rel="noopener">arXiv</a>
               <a class="btn" href="https://arxiv.org/pdf/2509.02801" target="_blank" rel="noopener">PDF</a>
               <a class="btn" href="https://link.springer.com/article/10.1007/JHEP02(2026)096" target="_blank" rel="noopener">Journal</a>
-              <!-- Replace with the official JHEP page URL if you want; leaving arXiv as safe default -->
-              
             </div>
           </li>
-          
+
           <li class="pub-item">
             <p class="pub-title">Maximal gravitational wave signal from asteroid-mass primordial black hole mergers at resonant microwave cavities</p>
             <p class="pub-meta">Stefano Profumo, Lucas Brown, Christopher Ewasiuk, Sean Ricarte, Henry Su. Physical Review D 111 (2025) 063072. arXiv:2410.15400 [astro-ph.HE].</p>
@@ -189,125 +260,66 @@
               <a class="btn" href="https://arxiv.org/pdf/2410.15400" target="_blank" rel="noopener">PDF</a>
               <a class="btn" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.063072" target="_blank" rel="noopener">Journal</a>
             </div>
-            </li>
+          </li>
 
         </ul>
-
       </section>
-
-      <!-- Software + Research -->
-      <section id="research-software">
-		<header class="major">
-		  <h2>Research Software & Analysis Pipelines</h2>
-		</header>
-	  
-		<div class="grid2">
-		  <div>
-			<h3>Resonant Microwave Cavity Signal Processing</h3>
-			<p class="muted">
-			  End-to-end analysis pipelines developed in collaboration with ADMX scientists to search for
-			  MHz–GHz gravitational waves using resonant microwave cavity detectors.
-			</p>
-			<ul>
-			  <li>
-				Phase-preserving FFT binning, receiver-response flattening, and absolute frequency calibration
-			  </li>
-			  <li>
-				Welch-based PSD estimation and robust stacking across large ensembles of high-resolution scans
-			  </li>
-			  <li>
-				Frequency-domain matched filtering for narrowband and quasi-monochromatic signals
-			  </li>
-			  <li>
-				Open-source analysis code:
-				<a href="https://github.com/cewasiuk?tab=repositories&type=source" target="_blank" rel="noopener">
-				  github.com/cewasiuk
-				</a>
-			  </li>
-			</ul>
-		  </div>
-	  
-		  <div>
-			<h3>Modeling, Simulation & Inference</h3>
-			<p class="muted">
-			  Theory-to-code workflows for black-hole evolution, gravitational-wave phenomenology,
-			  and detector sensitivity studies.
-			</p>
-			<ul>
-			  <li>
-				Numerical evolution pipelines (ODE solvers, interpolation, parameter scans)
-			  </li>
-			  <li>
-				Statistical modeling and noise-aware inference for experimental sensitivity estimates
-			  </li>
-			  <li>
-				Machine-learning project:
-				<a href="https://github.com/cewasiuk/Brain_Tumor_CNN" target="_blank" rel="noopener">
-				  CNN / U-Net tumor segmentation and severity grading (Erdős Institute capstone)
-				</a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-      </section>
-<!-- Skills -->
 <section id="skills">
-	<header class="major">
-	  <h2>Technical Expertise</h2>
-	</header>
-  
-	<div class="grid2">
-	  <div>
-		<h3>Data Analysis & Signal Processing</h3>
-		<ul>
-		  <li>Matched filtering and optimal detection statistics</li>
-		  <li>Power spectral density estimation (Welch, median / robust stacking)</li>
-		  <li>Fourier-domain methods (FFT / rFFT), binning, resampling</li>
-		  <li>Noise modeling, stationarity testing, statistical inference</li>
-		</ul>
-	  </div>
-  
-	  <div>
-		<h3>Scientific Computing & Modeling</h3>
-		<ul>
-		  <li>Numerical simulation pipelines and parameter sweeps</li>
-		  <li>ODE-based evolution models and numerical integration</li>
-		  <li>Monte Carlo methods and uncertainty propagation</li>
-		  <li>Metadata-aware workflows and large-scale data aggregation</li>
-		</ul>
-	  </div>
-  
-	  <div>
-		<h3>Machine Learning & Data Science</h3>
-		<ul>
-		  <li>Deep learning with CNN and U-Net architectures</li>
-		  <li>Image segmentation and classification (MRI data)</li>
-		  <li>Model evaluation (Dice, IoU, ROC, calibration)</li>
-		  <li>Uncertainty quantification and robustness analysis</li>
-		</ul>
-	  </div>
-  
-	  <div>
-		<h3>Programming & Research Tools</h3>
-		<ul>
-		  <li>Python (NumPy, SciPy, pandas, PyTorch, PyCBC, Matplotlib)</li>
-		  <li>FFTW / pyFFTW, HDF5, YAML / JSON</li>
-		  <li>Git / GitHub, Linux / Unix environments</li>
-		  <li>Scientific writing and documentation (LaTeX)</li>
-		</ul>
-	  </div>
-	</div>
-  </section>
+  <header class="major">
+    <h2>Technical Expertise</h2>
+  </header>
+
+  <div class="grid2">
+    <div>
+      <h3>Signal Processing and Detection</h3>
+      <ul>
+        <li>Matched filtering and optimal detection statistics for weak signal recovery</li>
+        <li>Power spectral density estimation (Welch, median stacking, robust averaging)</li>
+        <li>Frequency domain analysis, FFT binning, receiver response calibration</li>
+        <li>Noise modeling, stationarity testing, and false positive characterization</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Scientific Computing and Simulation</h3>
+      <ul>
+        <li>Large scale simulation pipelines spanning parameter sweeps and ODE evolution</li>
+        <li>Monte Carlo methods, uncertainty propagation, and sensitivity estimation</li>
+        <li>Extending existing research codebases to new physical regimes</li>
+        <li>Reproducible benchmark design and systematic evaluation frameworks</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Machine Learning and Evaluation</h3>
+      <ul>
+        <li>End to end deep learning pipelines in PyTorch (CNNs, 3D U-Net architectures)</li>
+        <li>Loss function design, class imbalance handling, and domain dataset curation</li>
+        <li>Rigorous model evaluation across Dice, IoU, ROC, and threshold optimization</li>
+        <li>Synthetic data pipelines that stress test models across distribution shift</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Programming and Tools</h3>
+      <ul>
+        <li>Python: NumPy, SciPy, pandas, PyTorch, PyCBC, Matplotlib</li>
+        <li>C and C++, FFTW, HDF5, Git, Linux</li>
+        <li>Multi-terabyte data pipelines and HDF5 based workflows</li>
+        <li>LaTeX, technical documentation, and open source research code</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
       <!-- Contact -->
       <section id="contact">
         <header class="major">
           <h2>Contact</h2>
         </header>
-
         <p>
-          Best way to reach me is email. Links to LinkedIn and GitHub are below.
+          Best way to reach me is email. Currently finishing my PhD at UC Santa Cruz (expected 2026) and open to research scientist and research engineer roles in the SF Bay Area.
         </p>
-
         <ul class="labeled-icons">
           <li>
             <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
@@ -340,7 +352,6 @@
       </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.poptrox.min.js"></script>
     <script src="assets/js/browser.min.js"></script>

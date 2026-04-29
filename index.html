@@ -19,7 +19,7 @@
     :root {
       --yellow:   #F5C518;
       --yellow-d: #cdb247;
-      --cream:    #f0ede421;
+      --cream:    #2a2a2a;
       --white:    #FAFAF7;
       --black:    #111111;
       --border:   3px solid #111111;
@@ -47,8 +47,8 @@
     /* ── NAV ── */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: var(--cream);
-      border-bottom: var(--border);
+      background: #1a1a1a;
+      border-bottom: 3px solid #111;
       padding: 0 2.5rem;
       display: flex;
       align-items: center;
@@ -59,7 +59,7 @@
     .nav-links a {
       font-weight: 600; font-size: .95rem;
       padding: .35em .85em; border-radius: 6px;
-      color: var(--black); transition: background .15s;
+      color: var(--yellow); transition: background .15s;
       position: relative;
     }
     .nav-links a.active::after {
@@ -67,7 +67,7 @@
       bottom: 2px; left: .85em; right: .85em;
       height: 3px; background: var(--yellow); border-radius: 2px;
     }
-    .nav-links a:hover { background: rgba(0,0,0,.07); }
+    .nav-links a:hover { background: rgba(255,255,255,.08); }
     .nav-icons { display: flex; gap: .75rem; align-items: center; }
     .nav-icons a {
       display: flex; align-items: center; justify-content: center;
@@ -263,7 +263,7 @@
       .project-left { border-right: none !important; border-bottom: var(--border); min-height: 120px; }
     }
     .project-left {
-      border-right: var(--border); background: var(--cream);
+      border-right: var(--border); background: #3a3a3a;
       display: flex; align-items: center; justify-content: center;
     }
     .project-emoji { font-size: 4.5rem; text-align: center; line-height: 1.3; }
@@ -303,7 +303,7 @@
     .proj-chip {
       font-size: .7rem; font-weight: 700; letter-spacing: .04em;
       border: var(--border); border-radius: 6px;
-      padding: .22em .65em; background: var(--cream);
+      padding: .22em .65em; background: #3a3a3a; color: var(--white);
     }
     .proj-link {
       display: inline-flex; align-items: center; gap: .3rem;
@@ -404,9 +404,10 @@
 
     /* ── FOOTER ── */
     footer {
-      border-top: var(--border); padding: 1.25rem 2.5rem;
+      border-top: 3px solid #111; padding: 1.25rem 2.5rem;
       display: flex; justify-content: space-between; flex-wrap: wrap; gap: .75rem;
-      font-size: .8rem; font-weight: 600; color: #777;
+      font-size: .8rem; font-weight: 600; color: var(--yellow);
+      background: #1a1a1a;
     }
 
     /* ── REVEAL ── */
@@ -624,14 +625,6 @@
               <div id="mri-slideshow" class="proj-slideshow">
                 <!-- slides injected by JS from MRI_CNN/manifest.json -->
               </div>
-              <div style="
-                position:absolute; inset:0;
-                display:flex; align-items:center; justify-content:center;
-                font-size:4.5rem;
-                pointer-events:none;
-                text-shadow: 0 0 20px rgba(0,0,0,0.9);
-                z-index:10;
-              "></div>
             </div>
             <div class="project-right">
               <div class="award-chip">★ Top Project — Erdős Institute (~200 PhDs)</div>
@@ -671,11 +664,11 @@
                 pointer-events:none;
                 text-shadow: 0 0 20px rgba(0,0,0,0.8);
                 z-index:10;
-              "></div>
+              ">👻</div>
             </div>
             <div class="project-right">
               <div class="project-tag-chip">Quantum Theory · arXiv 2026</div>
-              <div class="project-title">Ghost Stability — Exact Operator Conservation 👻</div>
+              <div class="project-title">Ghost Stability — Exact Operator Conservation</div>
               <div class="project-desc">Proved a rigorous quantum stability result for ghost-coupled systems, showing instabilities are not kinematically inevitable but depend on whether dynamics allow uncontrolled energy transfer.</div>
               <ul class="project-bullets">
                 <li>Exact conservation law: classical conserved quantity lifts to a quantum operator commuting with the Hamiltonian, with no ℏ corrections</li>
@@ -842,9 +835,9 @@
           <a href="/resume.pdf" target="_blank" class="resume-cta">↓ Download Resume</a>
         </div>
         <div class="contact-links">
-          <a href="mailto:cewasiuk@ucsc.edu" class="contact-lnk">
+          <a href="mailto:chrisrewasiuk@gmail.com" class="contact-lnk">
             <div class="cl-icon">✉️</div>
-            <div><div class="cl-label">Email</div><div class="cl-val">cewasiuk@ucsc.edu</div></div>
+            <div><div class="cl-label">Email</div><div class="cl-val">chrisrewasiuk@gmail.com</div></div>
           </a>
           <a href="https://www.linkedin.com/in/christopher-ewasiuk-82a64120b" target="_blank" class="contact-lnk">
             <div class="cl-icon">💼</div>
@@ -871,7 +864,7 @@
 <!-- FOOTER -->
 <footer>
   <span>© 2026 Christopher Ewasiuk · UC Santa Cruz</span>
-  <span>cewasiuk@ucsc.edu</span>
+  <span>chrisrewasiuk@gmail.com</span>
 </footer>
 
 <script>
@@ -924,7 +917,7 @@
       });
   }
 
-  initSlideshow('mri-slideshow',   'MRI_CNN/manifest.json',     5000);
+  initSlideshow('mri-slideshow',   'MRI_CNN/manifest.json',      5000);
   initSlideshow('ghost-slideshow', 'ghost_states/manifest.json', 5000);
 </script>
 

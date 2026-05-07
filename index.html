@@ -564,24 +564,26 @@
               <div class="project-emoji">📡<br/>🌊</div>
             </div>
             <div class="project-right">
-              <div class="project-tag-chip">Signal Processing · ADMX · Fermilab</div>
+              <div class="project-tag-chip">Signal Processing · Machine Learning · ADMX · SLAC</div>
               <div class="project-title">Gravitational Wave Detection Pipeline</div>
-              <div class="project-desc">End-to-end signal analysis system for searching gravitational waves via resonant microwave cavity detectors — turned a manual multi-terabyte workflow into a reproducible, automated pipeline.</div>
+              <div class="project-desc">End-to-end signal analysis and ML classification system for searching gravitational waves via resonant microwave cavity detectors, combining a matched filter pipeline with a gradient-boosted classifier to recover sub-threshold candidates and reject RFI false positives.</div>
               <ul class="project-bullets">
-                <li>Matched filtering across multi-terabyte experimental datasets</li>
-                <li>FFT binning, Welch PSD estimation, robust stacking, receiver calibration</li>
-                <li>Synthetic injection pipelines stress-testing models across thousands of noise realizations — surfacing failure modes and concrete evaluation criteria</li>
+                <li>Matched filtering across multi-terabyte experimental datasets with FFT binning, Welch PSD estimation, robust stacking, and receiver calibration</li>
+                <li>Synthetic injection pipeline generating thousands of noise realizations across SNR for stress-testing models</li>
+                <li>XGBoost classifier trained on morphological features of the matched-filter SNR time series, defining a four-quadrant candidate space that isolates genuine signals from RFI-driven false positives and sub-threshold anomalies</li>
+                <li>Deployed as part of the ADMX Run 1B reanalysis: first ML-assisted GW candidate classification from a microwave cavity detector in the GHz band</li>
               </ul>
               <div class="project-footer">
                 <div class="proj-chips">
                   <span class="proj-chip">Python</span>
-                  <span class="proj-chip">PyCBC</span>
+                  <span class="proj-chip">XGBoost</span>
+                  <span class="proj-chip">scikit-learn</span>
+                  <span class="proj-chip">NumPy</span>
                   <span class="proj-chip">HDF5</span>
-                  <span class="proj-chip">FFTW</span>
                 </div>
                 <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
-                  <a href="https://arxiv.org/abs/2410.15400" target="_blank" class="proj-link">arXiv ↗</a>
-                  <a href="https://github.com/cewasiuk?tab=repositories&type=source" target="_blank" class="proj-link">GitHub ↗</a>
+                  <a href="mailto:cewasiuk@ucsc.edu" class="proj-link">Preprint available on request ↗</a>
+                  <a href="mailto:cewasiuk@ucsc.edu" class="proj-link">Full code available on request ↗</a>
                 </div>
               </div>
             </div>

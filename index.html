@@ -560,8 +560,10 @@
 
         <div class="project-card reveal">
           <div class="project-inner">
-            <div class="project-left">
-              <div class="project-emoji">📡<br/>🌊</div>
+            <div class="project-left" style="background:#0a0a0a; padding:0; overflow:hidden; position:relative;">
+              <div id="ADMX-slideshow" class="proj-slideshow">
+                <!-- slides injected by JS from MRI_CNN/manifest.json -->
+              </div>
             </div>
             <div class="project-right">
               <div class="project-tag-chip">Signal Processing · Machine Learning · ADMX · SLAC</div>
@@ -922,6 +924,7 @@
 
   initSlideshow('mri-slideshow',   'MRI_CNN/manifest.json',      5000);
   initSlideshow('ghost-slideshow', 'ghost_states/manifest.json', 5000);
+  initSlideshow('ADMX-slideshow', 'ADMX/manifest.json', 10000);
 </script>
 
 </body>

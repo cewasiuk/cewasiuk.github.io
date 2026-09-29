@@ -155,6 +155,10 @@
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
     .status-main { font-weight: 700; font-size: 1rem; }
     .status-sub { font-size: .82rem; opacity: .85; }
+    .status-main a { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; }
+    .status-main a:hover { opacity: .85; }
+    .vinci-link { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; }
+    .vinci-link:hover { opacity: .75; }
 
     .stats-card {
       border: var(--border); border-radius: var(--radius);
@@ -451,14 +455,14 @@
     </div>
     <div class="nametag-body">
       <div class="nametag-name">Christopher<br/>Ewasiuk</div>
-      <div class="nametag-role">ML @ Vinci &nbsp;·&nbsp; PhD Computational Physicist &nbsp;·&nbsp; AI for Physics</div>
+      <div class="nametag-role">ML @ <a href="https://www.getvinci.ai/" target="_blank" class="vinci-link">Vinci</a> &nbsp;·&nbsp; PhD Computational Physicist &nbsp;·&nbsp; AI for Physics</div>
     </div>
   </div>
 
   <div class="hero-row">
     <div class="status-card">
       <div class="status-dot">Currently</div>
-      <div class="status-main">Member of Technical Staff — Vinci</div>
+      <div class="status-main">Member of Technical Staff — <a href="https://www.getvinci.ai/" target="_blank">Vinci ↗</a></div>
       <div class="status-sub">ML team · AI for physics simulation<br/>PhD, UC Santa Cruz (2026)</div>
     </div>
     <div class="stats-card">
@@ -489,12 +493,13 @@
     <div class="section-box">
       <div class="about-grid reveal">
         <div class="about-text-card">
-          <p>I'm a <strong>Member of Technical Staff on the ML team at Vinci</strong>, working on AI for physics simulation.</p>
+          <p>I'm a <strong>Member of Technical Staff on the ML team at <a href="https://www.getvinci.ai/" target="_blank" class="vinci-link">Vinci</a></strong>, working on AI for physics simulation.</p>
           <p>I came to this work through a <strong>PhD in computational physics at UC Santa Cruz</strong>, where I specialized in black hole dynamics and gravitational waves. Across 7 publications (5 first-author) in <em>Physical Review D</em>, <em>JHEP</em>, and <em>JCAP</em>, collaborations at <strong>ADMX and Fermilab</strong>, and end-to-end research pipelines, my work kept coming back to the same core question: <strong>where do models break down, and how do you build systems that tell you honestly when they are?</strong></p>
           <p>That meant building matched filtering pipelines across multi-terabyte datasets, evaluation systems that characterize failure modes across thousands of noise realizations, and simulation tools that push existing codebases into physical regimes they were never designed to handle.</p>
         
+        </div>
         <div class="about-tags">
-          <div class="about-tag">⚛️ AI for Physics · Vinci</div>
+          <a href="https://www.getvinci.ai/" target="_blank" class="about-tag">⚛️ AI for Physics · Vinci ↗</a>
           <div class="about-tag">📡 Signal Detection</div>
           <div class="about-tag">🌌 Gravitational Waves</div>
           <div class="about-tag">🧠 Deep Learning</div>
@@ -851,12 +856,16 @@
       <div class="contact-grid">
         <div>
           <div class="contact-blurb">
-            <p>I'm currently a <strong>Member of Technical Staff on the ML team at Vinci</strong>, building AI for physics simulation. PhD in computational physics from UC Santa Cruz (2026).</p>
+            <p>I'm currently a <strong>Member of Technical Staff on the ML team at <a href="https://www.getvinci.ai/" target="_blank" class="vinci-link">Vinci</a></strong>, building AI for physics simulation. PhD in computational physics from UC Santa Cruz (2026).</p>
             <p>Always happy to talk about <strong>AI for science, evaluation infrastructure, and ML systems</strong> — or black holes. Email is the best way to reach me.</p>
           </div>
           <a href="/resume.pdf" target="_blank" class="resume-cta">↓ Download Resume</a>
         </div>
         <div class="contact-links">
+          <a href="https://www.getvinci.ai/" target="_blank" class="contact-lnk">
+            <div class="cl-icon">⚛️</div>
+            <div><div class="cl-label">Vinci</div><div class="cl-val">getvinci.ai</div></div>
+          </a>
           <a href="mailto:chrisrewasiuk@gmail.com" class="contact-lnk">
             <div class="cl-icon">✉️</div>
             <div><div class="cl-label">Email</div><div class="cl-val">chrisrewasiuk@gmail.com</div></div>
@@ -889,7 +898,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <span>© 2026 Christopher Ewasiuk · Vinci · PhD, UC Santa Cruz</span>
+  <span>© 2026 Christopher Ewasiuk · <a href="https://www.getvinci.ai/" target="_blank" class="vinci-link">Vinci</a> · PhD, UC Santa Cruz</span>
   <span>chrisrewasiuk@gmail.com</span>
 </footer>
 
